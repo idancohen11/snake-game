@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#FF1493">
+    <title>🍆 SNAKE GAME 🍆</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Righteous&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-pattern"></div>
+
+    <div class="game-container">
+        <header class="game-header">
+            <h1 class="game-title">🍆 SNAKE 🍆</h1>
+            <div class="score-display">
+                <span class="score-label">SCORE:</span>
+                <span class="score-value" id="score">0</span>
+            </div>
+            <div class="highscore-display">
+                <span class="highscore-label">BEST:</span>
+                <span class="highscore-value" id="highscore">0</span>
+            </div>
+        </header>
+
+        <div class="game-wrapper">
+            <canvas id="gameCanvas"></canvas>
+
+            <div class="game-overlay" id="startScreen">
+                <div class="overlay-content">
+                    <h2 class="overlay-title">READY TO PLAY?</h2>
+                    <p class="overlay-text">Swipe or use arrow keys to move</p>
+                    <p class="overlay-text small">Eat the 🍑 to grow!</p>
+                    <button class="game-button" id="startButton">START GAME</button>
+                </div>
+            </div>
+
+            <div class="game-overlay hidden" id="gameOverScreen">
+                <div class="overlay-content">
+                    <h2 class="overlay-title game-over-title">GAME OVER!</h2>
+                    <p class="overlay-text big">Your Score: <span id="finalScore">0</span></p>
+                    <button class="game-button" id="restartButton">PLAY AGAIN</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="dpad">
+                <button class="dpad-btn dpad-up" id="btnUp">▲</button>
+                <div class="dpad-middle">
+                    <button class="dpad-btn dpad-left" id="btnLeft">◀</button>
+                    <div class="dpad-center"></div>
+                    <button class="dpad-btn dpad-right" id="btnRight">▶</button>
+                </div>
+                <button class="dpad-btn dpad-down" id="btnDown">▼</button>
+            </div>
+        </div>
+
+        <footer class="game-footer">
+            <p class="footer-text">Built with 💖 by Claude</p>
+        </footer>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
