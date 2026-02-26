@@ -4,7 +4,7 @@ A bold, playful, mobile-first snake game with an anatomically-inspired design.
 
 ## Play Now
 
-[Play the game here!](https://your-username.github.io/snake-game/)
+[Play the game here!](https://idancohen11.github.io/snake-game/)
 
 ## Features
 
